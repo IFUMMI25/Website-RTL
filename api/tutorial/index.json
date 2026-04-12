@@ -1,0 +1,111 @@
+{
+  "tutorials": [
+    {
+      "_id": "FirstSteps",
+      "id": "FirstSteps",
+      "title": {
+        "id": "Langkah Pertama",
+        "en": "First Steps"
+      },
+      "difficulty": 1,
+      "year": { "id": "Tingkat 1", "en": "Level 1" },
+      "duration": 15,
+      "hardware": [],
+      "subjects": [
+        { "id": "Informatika Dasar", "en": "Basic IT", "icon": "Informatik" },
+        { "id": "Teknik Elektro", "en": "Electrical", "icon": "Technik" }
+      ],
+      "topics": [
+        { "id": "Pengenalan Hardware", "en": "Hardware Intro", "icon": "Microcontroller" }
+      ],
+      "imageUrl": null,
+      "public": true,
+      "review": true
+    },
+    {
+      "_id": "UsingVariables",
+      "id": "UsingVariables",
+      "title": {
+        "id": "Penggunaan Variabel",
+        "en": "Using Variables"
+      },
+      "difficulty": 1,
+      "year": { "id": "Tingkat 1", "en": "Level 1" },
+      "duration": 20,
+      "hardware": [],
+      "subjects": [
+        { "id": "Pemrograman", "en": "Programming", "icon": "Informatik" }
+      ],
+      "topics": [
+        { "id": "Variabel & Memori", "en": "Memory Var", "icon": "Algorithmen" }
+      ],
+      "imageUrl": null,
+      "public": true,
+      "review": true
+    },
+    {
+      "_id": "IfThenConditions",
+      "id": "IfThenConditions",
+      "title": {
+        "id": "Kondisi If-Then (Jika-Maka)",
+        "en": "If-Then Conditions"
+      },
+      "difficulty": 2,
+      "year": { "id": "Tingkat 1", "en": "Level 1" },
+      "duration": 25,
+      "hardware": [],
+      "subjects": [
+        { "id": "Logika Komputer", "en": "Computer Logic", "icon": "Informatik" }
+      ],
+      "topics": [
+        { "id": "Struktur Kontrol", "en": "Control Logic", "icon": "Datenstrukturen" }
+      ],
+      "imageUrl": null,
+      "public": true,
+      "review": true
+    },
+    {
+      "_id": "Loops",
+      "id": "Loops",
+      "title": {
+        "id": "Perulangan",
+        "en": "Loops"
+      },
+      "difficulty": 2,
+      "year": { "id": "Tingkat 2", "en": "Level 2" },
+      "duration": 25,
+      "hardware": [],
+      "subjects": [
+        { "id": "Algoritma Lanjut", "en": "Advanced Algo", "icon": "Informatik" }
+      ],
+      "topics": [
+        { "id": "Iterasi Dinamis", "en": "Dynamic Loop", "icon": "Algorithmen" }
+      ],
+      "imageUrl": null,
+      "public": true,
+      "review": true
+    },
+    {
+      "_id": "DisplayingMeasurements",
+      "id": "DisplayingMeasurements",
+      "title": {
+        "id": "Mencetak Data Sensor pada Layar Display",
+        "en": "Printing Sensor Data on Display"
+      },
+      "difficulty": 3,
+      "year": { "id": "Tingkat 2", "en": "Level 2" },
+      "duration": 30,
+      "hardware": [],
+      "subjects": [
+        { "id": "Mekatronika", "en": "Mechatronics", "icon": "Robotik" }
+      ],
+      "topics": [
+        { "id": "Penginderaan Sensor", "en": "Sensor Sensing", "icon": "Sensoren" },
+        { "id": "Visualisasi Tampilan", "en": "Display Visuals", "icon": "Datenvisualisierung" }
+      ],
+      "imageUrl": null,
+      "public": true,
+      "review": true
+    }
+  ]
+}

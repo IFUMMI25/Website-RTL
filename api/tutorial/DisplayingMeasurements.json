@@ -1,0 +1,82 @@
+{
+  "id": "DisplayingMeasurements",
+  "title": {
+    "id": "Mencetak Data Sensor pada Layar Display",
+    "en": "Printing Sensor Data on Display"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "type": "instruction",
+      "headline": {
+        "id": "Pengantar Display",
+        "en": "Display Introduction"
+      },
+      "hardware": [
+        "hdc1080",
+        "oled",
+        "xanderidmcu",
+        "jst-jst"
+      ],
+      "requirements": [
+        1602160534286
+      ],
+      "content": {
+        "id": "Layar modul OLED memberikan kemampuan visual untuk mencetak (menampilkan) hasil pemantauan sensor secara real-time maupun informasi teks. Resolusi bentang layar piksel Display yang digunakan meliputi lebar 128 piksel pada sumbu horizontal (X) dan tinggi 64 piksel untuk sumbu vertikal (Y). Posisi pangkal nol dari sistem titik koordinat X/Y (0,0) bertempat telak di pojok kiri atas pada bingkai antarmuka layar. Pada sesi praktikum ringkas ini, Anda akan dikenalkan pada mekanisme pencetakan (printing) nilai output komputasi ke bingkai kanvas eksternal layar OLED.",
+        "en": "The OLED module screen gives visual capabilities to print (display) sensor monitoring results in real-time as well as text information. The display pixel span resolution used includes a width of 128 pixels on the horizontal axis (X) and a height of 64 pixels for the vertical axis (Y). The base zero position of the X/Y coordinate dot system (0,0) is located squarely in the upper left corner of the screen interface frame. In this brief practicum session, you will be introduced to the mechanism of printing computational output values to the external canvas frame of the OLED screen."
+      }
+    },
+    {
+      "id": 2,
+      "type": "instruction",
+      "headline": {
+        "id": "Sirkuit Antarmuka Display OLED",
+        "en": "OLED Display Interface Circuit"
+      },
+      "content": {
+        "id": "Pasangkan ekstensi layar penampil grafis (OLED) berserta kelengkapan kabel fleksibel JST-JST menuju 1 dari 5 titik soket paralel bus jalur serial data berprotokol I2C di perangkat baseboard utama MCU. Kemudian, Anda juga ditugaskan memasang subsistem komponen pengukur sensornya bertumpu pada kabel tipe JST serupa lalu ditelan menancap ke titik konektor identik bersoket sel bus I2C cadangan sisa di sistem yang sama tersebut.",
+        "en": "Attach the graphic display extension (OLED) along with the flexible JST-JST cable to 1 of the 5 parallel socket points of the I2C protocol serial data path bus on the main MCU baseboard device. Later, you are also assigned to install the sensor measuring component subsystem resting on a similar JST type cable and then plug it into the identical connector point of the remaining backup I2C bus cell socket in the same system."
+      }
+    },
+    {
+      "id": 3,
+      "type": "instruction",
+      "headline": {
+        "id": "Inisialisasi Antarmuka Display",
+        "en": "Display Interface Initialization"
+      },
+      "xml": "",
+      "content": {
+        "id": "Selaku prosedur awalan pertama konfigurasi operasi pengenalan sistem layar OLED, layar display harus disajikan fungsi inisialisasi status hardware (menyatakan nyala). Integrasikan komponen blok pembangun awal berjenis \"Begin Display\" (Inisialisasi Layar) sebagai fondasi perintah rutin di dalam bagian prosedur deklaratif fungsional Setup dasar.",
+        "en": "As the very first initial procedure for the OLED screen system recognition operation configuration, the display screen must be presented with a hardware state initialization function (declaring it ON). Integrate the initial builder block component of \"Begin Display\" type as the routine command foundation within the basic functional declarative Setup procedure section."
+      }
+    },
+    {
+      "id": 4,
+      "type": "instruction",
+      "headline": {
+        "id": "Parameter Tata Letak Cetak (Print Display)",
+        "en": "Print Display Layout Parameters"
+      },
+      "xml": "",
+      "content": {
+        "id": "Pada tingkatan selanjutnya, tanamkan blok pengeksekusi pencetak khusus bertitel \"Show on Display\" di ranah fungsi repetitif kontinu (Loop). Terlepas dari elemen ini, konfigurasi sistem memerlukan suplai presisi dari blok argumen bernada instruksi penulisan \"Print Text/Number\" sebagai acuan pedoman mencolok di mana letak persisnya koordinat data ditampilkan. Fitur parameter nilai input manual variabel sel koordinat ruang titik lokasi X dan lokasi baris Y membantu programmer dalam menstruktur resolusi letak mencetak karakternya. Peringatan teknis desain layar: Saat beroperasi memakai font standard ber-Size 1 (1x skala), program firmware otomatis mencaplok porsi ruang setinggi 8 piksel berturut. (Size rasio ganda ke-2 bakal memangsa 16 lapis piksel mendatar vertikal). Untuk mengisi celah nilai output bacaannya di blok kosong bernama \"Nilai Print (Value)\", programmer idealnya mendrop susunan komponen fungsional peranti Sensor Thermometer / Humidity ke ceruk persimpangan celah argumen sisi ujung kanannya tersebut. Lebih vital lagi agar grafis string baru di iterasi lanjut tidak sampai salah bertabrakan bertumpang-tindih teks grafis frame lama di layar (kerancuan visual Overwrite Pixel), maka implementasikanlah blok operator pembilas buffer penampung penyegar ruang cache \"Clear Display (Bersihkan Layar)\" berada berjejer sesudah eksekusi purna prosedur mencetaknya.",
+        "en": "At the next stage, implant a special printer execution block titled \"Show on Display\" within the continuous repetitive function domain (Loop). Apart from this element, the system configuration requires precision supply from argument blocks bearing the writing instruction \"Print Text/Number\" as a striking guideline reference for exactly where data coordinates are displayed. The coordinate cell variable manual input value parameter feature for X point space location and Y line location helps programmers to structure their character print layout resolution. Screen design technical warning: When operating using standard Size 1 font (1x scale), the firmware program automatically annexes a space portion of 8 pixels high consecutively. (A multiplier Size 2 ratio will consume 16 horizontal vertical pixel layers). To fill the reading output value gap in the empty block named \"Value\", optimally the programmer drops the Thermometer / Humidity Sensor device functional component array into the argument gap intersection alcove at its far right end. More vitally, so that new string graphics in further iterations don't mistakenly collide and overlap with old frame graphic texts on screen (visual Overwrite Pixel confusion), implement the cache space refresher storage buffer rinser operator block \"Clear Display\" lined up after the complete execution of its printing procedure."
+      }
+    },
+    {
+      "id": 5,
+      "type": "task",
+      "headline": {
+        "id": "Tugas Praktikum Analisis Layar OLED",
+        "en": "OLED Screen Analysis Practical Task"
+      },
+      "xml": "",
+      "content": {
+        "id": "Ajaklah komponen algoritma tata letak pemrograman Blockly visual di atas untuk dikombinasikan sedemikian rupa menjadi susunan blok tugas terkomputasi, dengan agenda operasional memajang dan mencetak deretan string grafis hasil parameter bacaan murni instrumen alat pengukur suhu hawa (Temperatur termal) berikut rasio Kelembaban Udara presipitasi bergeser langsung memamerkan angkanya di penampang kaca depan panel modul instrumen layar layar Display OLED antarmuka hardware IoT Anda.",
+        "en": "Involve the visual Blockly programming layout algorithm components above to combine them in such a way into a computational task block arrangement, with an operational agenda to display and print a string graphics row of the pure reading parameters from the air heat measuring instrument (Thermal Temperature) plus precipitation Air Humidity ratios shifting and directly exhibiting their numbers on the front glass profile panel of your IoT hardware interface OLED Display screen instrument module."
+      }
+    }
+  ],
+  "_id": "DisplayingMeasurements"
+}

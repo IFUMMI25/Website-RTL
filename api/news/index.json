@@ -1,0 +1,20 @@
+{
+  "news": [
+    {
+      "id": "ReleaseNotes",
+      "title": {
+        "id": "Rilis Platform RTL 25",
+        "en": "RTL 25 Platform Release"
+      },
+      "date": "2026-04-01",
+      "summary": {
+        "id": "Versi terbaru dari platform pembelajaran Block-Based kita akhirnya rilis secara publik dengan segudang perbaikan antarmuka dan penanganan bug.",
+        "en": "The latest variant of our educational block-based platform is finally released publicly with massive UI improvements and bug fixes."
+      },
+      "imageUrl": "/media/images/icon.png",
+      "tags": [
+        { "id": "Pembaruan Platform", "en": "Platform Update", "icon": "Informatik" }
+      ]
+    }
+  ]
+}

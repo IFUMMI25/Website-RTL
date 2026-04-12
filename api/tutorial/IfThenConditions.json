@@ -1,0 +1,72 @@
+{
+  "id": "IfThenConditions",
+  "title": {
+    "id": "Kondisi If-Then (Jika-Maka)",
+    "en": "If-Then Conditions"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "type": "instruction",
+      "headline": {
+        "id": "Apa itu Kondisi If-Then?",
+        "en": "What is an If-Then Condition?"
+      },
+      "hardware": [
+        "xanderidmcu",
+        "breadboard",
+        "jst-adapter",
+        "resistor-470ohm"
+      ],
+      "requirements": [
+        1602160534286
+      ],
+      "content": {
+        "id": "Pada tutorial ini, Anda akan mempelajari penggunaan kondisi If-Then (Jika-Maka). Logika percabangan Jika-Maka merupakan salah satu struktur kontrol terpenting dalam komputasi eksekusi program dan berfungsi secara esensial membantu Anda merespons status sistem/kondisi tertentu.",
+        "en": "In this tutorial, you will learn the use of If-Then conditions. If-Then branching logic is one of the most important control structures in computing program execution and serves essentially to help you respond to certain system statuses/conditions."
+      }
+    },
+    {
+      "id": 2,
+      "type": "instruction",
+      "headline": {
+        "id": "Perakitan Sirkuit Hardware",
+        "en": "Hardware Circuit Assembly"
+      },
+      "media": {
+        "picture": "01_circuit.png"
+      },
+      "content": {
+        "id": "Hubungkan modul LED memakai kabel adapter JST dan komponen resistor 470 Ohm ke salah satu dari 3 (tiga) port input Digital/Analog di board utama MCU.",
+        "en": "Connect the LED module using the JST adapter cable and a 470 Ohm resistor component to one of the 3 (three) Digital/Analog input ports on the main MCU board."
+      }
+    },
+    {
+      "id": 3,
+      "type": "instruction",
+      "headline": {
+        "id": "Instruksi Kontrol Logika Jika-Maka",
+        "en": "If-Then Logic Control Instruction"
+      },
+      "xml": "",
+      "content": {
+        "id": "Struktur kontrol If-Then dapat digunakan untuk mengeksekusi spesifik blok baris dari Source Code manakala suatu argumen pembanding tertentu sukses terpenuhi (berstatus ekuivalen / True).\n\njika (kondisi) maka\n  jalankan_instruksi();\nselesai;\n\nTelusuri contoh komposisi di bawah yang mempresentasikan secara lugas pembentukan blok logika kondisional Jika-Maka. Contoh umum semisal, Anda membandingkan variabel internal sensor termperatur terhadap nilai numerik konstanta suhu tertentu. Jikalau validasi ekuivalensi komparasinya mendapati status 'True' (Benar), barisan instruksi dari blok operasional di seksi pecahan 'Maka (Then)' akan otomatis dieksekusi prosesor.  Jika validasinya malah menghasilkan status 'False' (Ketentuan tak terpenuhi), sistem akan sepenuhnya mendiskonfirmasi eksekusi parsial di dalamnya dan meloncat melaksanakan barisan instruksi Source Code paling bawah di luar komponen Jika-Maka tersebut.\n",
+        "en": "The If-Then control structure can be used to execute specific row blocks of Source Code when a certain comparison argument is successfully fulfilled (equivalent / True status).\n\nif (condition) then\n  execute_instruction();\nend;\n\nBrowse the composition example below which directly presents the formation of the If-Then conditional logic block. A common example, you compare the internal temperature sensor variable against the numerical value of a certain temperature constant. If the comparison equivalence validation finds a 'True' status, the instruction line from the operational block in the 'Then' fractional section will be automatically executed by the processor. If the validation instead results in a 'False' status (Conditions not met), the system will fully disconfirm the partial execution within it and jump to executing the bottommost Source Code instruction line outside the If-Then component.\n"
+      }
+    },
+    {
+      "id": 4,
+      "type": "task",
+      "headline": {
+        "id": "Interupsi LED via Penekanan Tombol",
+        "en": "LED Interrupt via Button Press"
+      },
+      "xml": "",
+      "content": {
+        "id": "Rancang program sistem dinamis di mana status LED berubah menjadi menyala seketika saat tombol mekanik ('Button') bawaan dari modul MCU sedang secara fisik ditekan. Anda dapat mengambil dan memperoleh penugasan blok parameter tombol ('Button') dari tab kategori 'Sensor'.",
+        "en": "Design a dynamic system program where the LED status turns on instantly when the mechanical button ('Button') built into the MCU module is physically pressed. You can retrieve and acquire the button ('Button') parameter block assignment from the 'Sensor' category tab."
+      }
+    }
+  ],
+  "_id": "IfThenConditions"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "FirstSteps",
+  "title": {
+    "id": "Langkah Pertama",
+    "en": "First Steps"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "type": "instruction",
+      "headline": {
+        "id": "Langkah Pertama",
+        "en": "First Steps"
+      },
+      "hardware": [
+        "xanderidmcu",
+        "led",
+        "breadboard",
+        "jst-adapter",
+        "resistor-470ohm"
+      ],
+      "requirements": [],
+      "content": {
+        "id": "Pada tutorial ini, Anda akan mempelajari langkah pertama untuk menggunakan platform ini. Anda akan membuat program pertama, menyusun sirkuit awal, dan mempelajari tata cara mengunggah Source Code ke board MCU.",
+        "en": "In this tutorial, you will learn the first steps to use this platform. You will create your first program, build the initial circuit, and learn how to upload Source Code to the MCU board."
+      }
+    },
+    {
+      "id": 2,
+      "type": "instruction",
+      "headline": {
+        "id": "Perakitan Sirkuit Hardware",
+        "en": "Hardware Circuit Assembly"
+      },
+      "media": {
+        "picture": "tutorial_01.png"
+      },
+      "content": {
+        "id": "Pasang komponen LED pada Breadboard lalu hubungkan kutub resistor dengan kabel JST menuju port Digital/Analog urutan pertama (Pin 1).\n",
+        "en": "Install the LED component on the Breadboard and then connect the resistor pole with the JST cable to the first Digital/Analog port (Pin 1).\n"
+      }
+    },
+    {
+      "id": 3,
+      "type": "instruction",
+      "headline": {
+        "id": "Pemrograman",
+        "en": "Programming"
+      },
+      "xml": "",
+      "content": {
+        "id": "Setiap Source Code untuk sistem ini wajib memiliki dua fungsi utama. Blok Setup dijalankan sekali di fase inisialisasi pada tahapan boot. Blok Loop (perulangan) akan dieksekusi secara terus-menerus sesudahnya.",
+        "en": "Every Source Code for this system must have two main functions. The Setup block is run once in the initialization phase at boot time. The Loop block will be executed continuously afterwards."
+      }
+    },
+    {
+      "id": 4,
+      "type": "instruction",
+      "headline": {
+        "id": "Mengaktifkan LED",
+        "en": "Turning on the LED"
+      },
+      "xml": "",
+      "content": {
+        "id": "Untuk membuat LED menyala, tempatkan blok fungsional LED ke dalam fungsi struktural Loop. Blok pemrograman ini memfasilitasi Anda untuk menugaskan status operasional ON (HIGH) atau OFF (LOW) ke Pin nomor berapa pun yang Anda hubungkan kabel ke sistem hardware Anda.",
+        "en": "To make the LED light up, place the LED functional block into the Loop structural function. This programming block facilitates you to assign an operational status of ON (HIGH) or OFF (LOW) to whatever Pin number you connect the cable to your hardware system."
+      }
+    },
+    {
+      "id": 5,
+      "type": "task",
+      "headline": {
+        "id": "Tugas Praktikum 1",
+        "en": "Practical Task 1"
+      },
+      "xml": "",
+      "content": {
+        "id": "Gunakan komponen kontrol blok yang sudah dipelajari di atas untuk memprogram LED menjadi menyala (berstatus HIGH).",
+        "en": "Use the block control components learned above to program the LED to turn on (HIGH status)."
+      }
+    },
+    {
+      "id": 6,
+      "type": "instruction",
+      "headline": {
+        "id": "Mengunggah File Kompilasi",
+        "en": "Uploading Compiled Files"
+      },
+      "media": {
+        "youtube": "jzlOJ7Zuqqw"
+      },
+      "content": {
+        "id": "Sempurna! Anda sukses menyusun serta mengkompilasi file Source Code pertama Anda. Tahap berikutnya adalah menanam program (unggah berkas eksekusi .BIN) ke board MCU. Sambungkan hardware dengan kabel USB menuju komputer operasi Anda lalu lakukan prosedur reset ganda. Perangkat secara otentik akan dibaca sebagai mass storage (layaknya Flashdisk). Lakukan salin-tempel (copy-paste) berkas kode kompilasi menuju storage flash internal dari MCU.",
+        "en": "Perfect! You have successfully compiled your first Source Code file. The next stage is to embed the program (upload the .BIN executable file) to the MCU board. Connect the hardware with a USB cable to your computer and perform a double reset procedure. The device will authentically be read as mass storage (like a Flash drive). Copy and paste the compiled code file into the internal flash storage of the MCU."
+      }
+    }
+  ],
+  "_id": "FirstSteps"
+}

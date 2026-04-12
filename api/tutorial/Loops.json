@@ -1,0 +1,84 @@
+{
+  "id": "Loops",
+  "title": {
+    "id": "Perulangan",
+    "en": "Loops"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "type": "instruction",
+      "headline": {
+        "id": "Perulangan",
+        "en": "Loops"
+      },
+      "hardware": [
+        "breadboard",
+        "jst-adapter",
+        "xanderidmcu",
+        "led",
+        "resistor-470ohm"
+      ],
+      "requirements": [
+        1602160534286
+      ],
+      "content": {
+        "id": "Pada tutorial ini akan diperkenalkan penggunaan algoritma loop (perulangan). Perulangan (loop) merupakan struktur kontrol mendasar dalam bahasa pemrograman. Fungsi ini secara konstan mengulang-ulang eksekusi kode (loop body) selama syarat kondisinya terpenuhi atau jika kondisi berhentinya belum muncul. Loop tanpa batas akhir disebut Infinite Loop. Anda sebelumnya sudah menggunakan blok Infinite Loop ini pada tutorial Langkah Pertama.",
+        "en": "In this tutorial, the use of loop algorithms will be introduced. A loop is a fundamental control structure in programming languages. This function constantly repeats the execution of code (loop body) as long as its condition requirements are met or if its stopping condition has not yet appeared. A loop with no end limit is called an Infinite Loop. You have previously used this Infinite Loop block in the First Steps tutorial."
+      }
+    },
+    {
+      "id": 2,
+      "type": "instruction",
+      "headline": {
+        "id": "Penggunaan Loop Khusus",
+        "en": "Usage of Specific Loops"
+      },
+      "xml": "",
+      "content": {
+        "id": "Anda bisa menemukan kontrol pengulangan pada kategori blok Perulangan. Pendekatan loop dasar adalah komponen Ulangi 10 Kali (Repeat 10 times). Melalui blok ini, Anda cukup menyusun intruksi Source Code ke dalam blok tersebut agar kode di dalamnya diulang secara konstan.",
+        "en": "You can find loop controls in the Loops block category. The basic loop approach is the Repeat 10 times component. Through this block, you simply arrange the Source Code instructions into the block so that the code inside it is repeated constantly."
+      }
+    },
+    {
+      "id": 3,
+      "type": "task",
+      "headline": {
+        "id": "Tugas Praktikum Perulangan",
+        "en": "Loop Practical Task"
+      },
+      "xml": "",
+      "content": {
+        "id": "Programkan sebuah sistem agar LED dapat berkedip (blinking) tepat sebanyak 5 kali dengan penundaan waktu jeda 1000 milidetik. Setelah iterasi berulang selesai secara total, set status output untuk mematikan sirkuit LED secara dinamis.",
+        "en": "Program a system so that the LED can blink exactly 5 times with a 1000 millisecond delay time limit. After the repeated iterations are totally finished, set the output status to dynamically turn off the LED circuit."
+      }
+    },
+    {
+      "id": 4,
+      "type": "instruction",
+      "headline": {
+        "id": "Perulangan Variabel Berjalan",
+        "en": "Running Variable Loop"
+      },
+      "xml": "",
+      "content": {
+        "id": "Modifikasi perulangan bisa dikendalikan secara komputasional lewat parameter FOR. Kita dapat mendefinisikan awal eksekusi indeks looping, serta nilai pertambahan selang (increment) variabel. Keunggulan utamanya adalah kemampuan mereferensikan memori hitungan tersebut, secara internal seperti pemakaian variabel 'i'. Sebagai rekayasa arsitektural, Anda dapat memprogram frekuensi Source Code interupsi *delay* secara adaptif mengikuti variabel perhitungan sistematis 'i' tersebut.",
+        "en": "Loop modifications can be controlled computationally via the FOR parameter. We can define the beginning of the looping index execution, as well as the variable's increment value. Its main advantage is the ability to reference the count memory internally, such as the use of the variable 'i'. As an architectural engineering, you can program the frequency of the Source Code *delay* interrupt adaptively following the systematic calculation variable 'i'."
+      }
+    },
+    {
+      "id": 5,
+      "type": "task",
+      "headline": {
+        "id": "Tugas Praktikum Variabel Loop",
+        "en": "Loop Variable Practical Task"
+      },
+      "xml": "",
+      "content": {
+        "id": "Terapkan konsep loop berbasis parameter rentang referensi counter, atur jeda waktu LED sedemikian rupa agar nilainya langsung berfluktuasi mandiri bergantung pada variabel loop berjalan (seperti memori logis 'i').",
+        "en": "Apply a loop concept based on a counter reference range parameter, setting the LED time delay in such a way that its value directly fluctuates independently depending on the running loop variable (such as logical memory 'i')."
+      }
+    }
+  ],
+  "_id": "Loops"
+}

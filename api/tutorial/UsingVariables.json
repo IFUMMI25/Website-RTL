@@ -1,0 +1,69 @@
+{
+  "id": "UsingVariables",
+  "title": {
+    "id": "Penggunaan Variabel",
+    "en": "Using Variables"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "type": "instruction",
+      "headline": {
+        "id": "Variabel",
+        "en": "Variables"
+      },
+      "hardware": [
+        "xanderidmcu",
+        "oled",
+        "jst-jst",
+        "hdc1080"
+      ],
+      "requirements": [
+        1602160534286
+      ],
+      "content": {
+        "id": "Variabel merupakan sebuah 'wadah' referensi statis maupun dinamis (tempat penyimpanan / placeholder) yang sangat sering digunakan dalam ilmu teknik informatika. Konsep Variabel ibarat representasi ruang alokasi memori lokal yang diberi pelabelan nama variabel yang unik. Ke dalam alokasi memori ini, Anda sanggup mengirim, menyimpan, lalu kemudian memanggil kembali beraneka macam nilai data (seperti Teks String maupun Angka Numerik) pada tiap tahapan baris eksekusi.",
+        "en": "A variable is a static or dynamic reference 'container' (storage / placeholder) that is very often used in computer science. The concept of a variable is like a representation of a local memory allocation space that is given a unique variable name label. Into this memory allocation, you can send, store, and then recall various kinds of data values (such as String Text or Numeric Numbers) at each stage of execution."
+      }
+    },
+    {
+      "id": 2,
+      "type": "instruction",
+      "headline": {
+        "id": "Perakitan Sirkuit Hardware",
+        "en": "Hardware Circuit Assembly"
+      },
+      "content": {
+        "id": "Hubungkan bagian perangkat layar penampil OLED (Display) dan sensor Temperatur Kelembaban Udara (HDC1080) masing-masing menggunakan antarmuka selang JST-JST menuju unit salah satu dari kumpulan ke-5 port ekspansi bus I2C pada MCU board Anda.",
+        "en": "Connect the OLED Display device and the HDC1080 Temperature and Humidity sensor using a JST-JST cable interface each to one of the 5 I2C bus expansion ports on your MCU board."
+      }
+    },
+    {
+      "id": 3,
+      "type": "instruction",
+      "headline": {
+        "id": "Sistem Variabel di Lingkungan Blockly",
+        "en": "Variable System in Blockly Environment"
+      },
+      "xml": "",
+      "content": {
+        "id": "Variabel bernilai fleksibel; angka data mereka bisa bertransmutasi dan dikontrol di tengah periode jalannya Source Code. Ini memungkinkan Anda, sebagai contoh, menugaskan entitas variabel berlabel \"Temperatur\" agar selalu rutin menyesuaikan dirinya mengikuti nilai termperatur seketika yang ditangkap presisi oleh pembacaan sensor.\n\nTipe Data Variabel (Data Types):\nSebuah representasi Variabel diwajibkan secara mutlak merujuk pada salah satu bentuk Tipe Data struktural. Tipe Data menentukan karakteristik ukuran alokasi ruang RAM yang digunakan sekaligus format baku untuk membuang penugasan data anomali yang tak diizinkan. Terdapat beberapa Tipe Data populer dalam aplikasi:\n\nKarakter (char): Untuk menyimpan tepat satu buah simbol karakter tunggal.\nTeks (String): Untuk menyatukan susunan deretan frasa kata, kata utuh, merambat hingga kalimat panjang komplit.\nAngka (int): Skala penugasan bilangan bulat absolut (misalkan dari ekuivalen rentang -32.768 hingga maksimal +32.768)\nAngka Kapasitas Tertinggi (long): Dialokasikan untuk angka fantastis tak ternilai di puluhan juta dan puluhan milyar kisarannya.\nAngka Desimal (float): Mengakomodasi komputasi perhitungan parameter bilangan riil pecahan dan penulisan berkoma titik (seperti 25.3).",
+        "en": "Variables have flexible values; their data numbers can transmutate and be controlled in the middle of the Source Code execution period. This allows you, for example, to assign a variable entity labeled \"Temperature\" so that it routinely adjusts itself to follow the instantaneous temperature value accurately captured by the sensor reading.\n\nVariable Data Types:\nA Variable representation is strictly required to refer to one of the structural Data Type forms. The Data Type determines the allocation size characteristics of the RAM space used as well as the standard format to discard unauthorized anomaly data assignments. There are several popular Data Types in the application:\n\nCharacter (char): To store exactly one single character symbol.\nText (String): To unite an arrangement of word phrases, whole words, extending to complete long sentences.\nNumber (int): Range of absolute integer assignment (for example from the equivalent range of -32,768 to a maximum of +32,768).\nHighest Capacity Number (long): Allocated for invaluable fantastic numbers in the tens of millions and tens of billions range.\nDecimal Number (float): Accommodates computational calculations of fractional real numbers and dotted commas (such as 25.3)."
+      }
+    },
+    {
+      "id": 4,
+      "type": "task",
+      "headline": {
+        "id": "Tugas Praktikum 1:",
+        "en": "Practical Task 1:"
+      },
+      "xml": "",
+      "content": {
+        "id": "Buat 2 (dua) deklarasi definisi variabel pertama Anda lengkap dengan tipe data parameter ukur \"Angka Desimal (float)\", lalu tugaskan variabel-variabel buatan ini untuk siap secara komputasi merekam nilai keluaran dari sensor pembaca temperatur sekaligus menampung kelembaban udara (humidity). Jika semua sudah terekam dan disahkan ke dalam variabel, perintahkan secara aktif modul program Anda untuk menampilkan rekapan memori data string variabelnya langsung pada kanvas grafis fisik layarnya (layar OLED).",
+        "en": "Create your first 2 (two) variable definition declarations complete with the measuring parameter data type \"Decimal Number (float)\", then assign these artificial variables to be computationally ready to record the output value from the temperature reader sensor as well as accommodate air humidity (humidity). If everything has been recorded and authorized into the variable, actively command your program module to display the recap of the variable string data memory directly onto its physical graphics canvas (OLED screen)."
+      }
+    }
+  ],
+  "_id": "UsingVariables"
+}

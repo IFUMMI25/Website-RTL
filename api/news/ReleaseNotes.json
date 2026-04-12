@@ -1,0 +1,12 @@
+{
+  "id": "ReleaseNotes",
+  "title": {
+    "id": "Rilis Platform RTL 25",
+    "en": "RTL 25 Platform Release"
+  },
+  "date": "2026-04-01",
+  "content": {
+    "id": "## Pembaruan Besar-besaran\n\nPlatform RTL IFUMMI 25 telah rilis dengan megah!\n\nKami telah memigrasikan berbagai fungsionalitas dan menerjemahkan segala *string* yang tertinggal dalam bahasa asing kembali menuju lokalisasi yang sesuai.\n\n### Daftar Perubahan\n- Fitur _Localization_ multibahasa (EN-ID) ditambahkan.\n- *Card Grid* dirombak secara visual.\n- Perbaikan bug _overlap_ tata letak di halaman Tutorial\n- Peningkatan performa *Rendering*.\n\nJangan lupa bagikan kabar baik ini kepada para praktikan Laboratorium Informatika Sistem!",
+    "en": "## Massive Updates\n\nRTL IFUMMI 25 Platform is officially here!\n\nWe have migrated various functionalities and translated all remaining foreign strings back to their proper localization.\n\n### Changelog\n- Multilanguage _Localization_ (EN-ID) added to UI.\n- *Card Grid* restyled visually.\n- Fixed layout _overlap_ bugs in Tutorial view.\n- Improved *Rendering* performance.\n\nDon't forget to share the good news with the Informatics Labs assistants!"
+  }
+}
